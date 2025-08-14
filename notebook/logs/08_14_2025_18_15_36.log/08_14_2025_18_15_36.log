@@ -1,0 +1,7 @@
+[ 2025-08-14 18:15:36,089 ] 35 root - INFO - Starting preprocessing of 'ratings' column.
+[ 2025-08-14 18:15:36,090 ] 39 root - INFO - Sample DataFrame loaded for demonstration.
+[ 2025-08-14 18:15:36,143 ] 43 root - INFO - Applied parsing function to 'ratings' column.
+[ 2025-08-14 18:15:36,157 ] 47 root - INFO - Expanded dictionaries into a new ratings DataFrame.
+[ 2025-08-14 18:15:36,158 ] 50 root - INFO - Calculating the average rating for each property.
+[ 2025-08-14 18:15:36,169 ] 54 root - INFO - Successfully created 'avg_rating' feature.
+[ 2025-08-14 18:15:36,250 ] 59 root - INFO - Successfully preprocessed ratings. Final DataFrame structure:
