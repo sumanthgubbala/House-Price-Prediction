@@ -1,0 +1,11 @@
+[ 2025-08-21 00:18:08,063 ] 28 root - INFO - Entered the data Ingestion method
+[ 2025-08-21 00:18:08,144 ] 32 root - INFO - Read the dataset as DataFrame
+[ 2025-08-21 00:18:08,178 ] 42 root - INFO - Train test split initiated 
+[ 2025-08-21 00:18:08,253 ] 73 root - INFO - read train and test data completed.
+[ 2025-08-21 00:18:08,253 ] 74 root - INFO - obtainig preprocessing object
+[ 2025-08-21 00:18:08,254 ] 47 root - INFO - Numerical columns: ['rate', 'area_sqft', 'bedRoom', 'bathroom', 'balcony', 'noOfFloor', 'agePossession_processed', 'avg_rating']
+[ 2025-08-21 00:18:08,254 ] 48 root - INFO - Categorical columns: ['facing']
+[ 2025-08-21 00:18:08,254 ] 50 root - INFO - Numerical columns standard Scaling Completed
+[ 2025-08-21 00:18:08,254 ] 51 root - INFO - Catgorical cloumns onehotencoding completed.
+[ 2025-08-21 00:18:08,258 ] 89 root - INFO - Applying preprocessing object on training dataframe and testing dataframe
+[ 2025-08-21 00:18:08,297 ] 98 root - INFO - Saved preprocessing object
