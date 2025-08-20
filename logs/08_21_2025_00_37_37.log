@@ -1,0 +1,14 @@
+[ 2025-08-21 00:37:47,439 ] 30 root - INFO - Entered the data Ingestion method
+[ 2025-08-21 00:37:47,530 ] 34 root - INFO - Read the dataset as DataFrame
+[ 2025-08-21 00:37:47,570 ] 44 root - INFO - Train test split initiated 
+[ 2025-08-21 00:37:47,639 ] 73 root - INFO - read train and test data completed.
+[ 2025-08-21 00:37:47,639 ] 74 root - INFO - obtainig preprocessing object
+[ 2025-08-21 00:37:47,639 ] 47 root - INFO - Numerical columns: ['rate', 'area_sqft', 'bedRoom', 'bathroom', 'balcony', 'noOfFloor', 'agePossession_processed', 'avg_rating']
+[ 2025-08-21 00:37:47,639 ] 48 root - INFO - Categorical columns: ['facing']
+[ 2025-08-21 00:37:47,640 ] 50 root - INFO - Numerical columns standard Scaling Completed
+[ 2025-08-21 00:37:47,640 ] 51 root - INFO - Catgorical cloumns onehotencoding completed.
+[ 2025-08-21 00:37:47,643 ] 89 root - INFO - Applying preprocessing object on training dataframe and testing dataframe
+[ 2025-08-21 00:37:47,677 ] 98 root - INFO - Saved preprocessing object
+[ 2025-08-21 00:37:47,684 ] 35 root - INFO - Split training and test input data
+[ 2025-08-21 00:37:51,727 ] 67 root - INFO - Best found model on both training and testing dataset
+[ 2025-08-21 00:37:51,734 ] 74 root - INFO - Model pickle file saved

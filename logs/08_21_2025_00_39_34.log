@@ -1,0 +1,14 @@
+[ 2025-08-21 00:39:39,762 ] 30 root - INFO - Entered the data Ingestion method
+[ 2025-08-21 00:39:39,839 ] 34 root - INFO - Read the dataset as DataFrame
+[ 2025-08-21 00:39:39,861 ] 44 root - INFO - Train test split initiated 
+[ 2025-08-21 00:39:39,957 ] 73 root - INFO - read train and test data completed.
+[ 2025-08-21 00:39:39,957 ] 74 root - INFO - obtainig preprocessing object
+[ 2025-08-21 00:39:39,957 ] 47 root - INFO - Numerical columns: ['rate', 'area_sqft', 'bedRoom', 'bathroom', 'balcony', 'noOfFloor', 'agePossession_processed', 'avg_rating']
+[ 2025-08-21 00:39:39,957 ] 48 root - INFO - Categorical columns: ['facing']
+[ 2025-08-21 00:39:39,957 ] 50 root - INFO - Numerical columns standard Scaling Completed
+[ 2025-08-21 00:39:39,958 ] 51 root - INFO - Catgorical cloumns onehotencoding completed.
+[ 2025-08-21 00:39:39,960 ] 89 root - INFO - Applying preprocessing object on training dataframe and testing dataframe
+[ 2025-08-21 00:39:39,984 ] 98 root - INFO - Saved preprocessing object
+[ 2025-08-21 00:39:39,989 ] 35 root - INFO - Split training and test input data
+[ 2025-08-21 00:39:43,755 ] 67 root - INFO - Best found model on both training and testing dataset
+[ 2025-08-21 00:39:43,760 ] 74 root - INFO - CatBoosting RegressorModel pickle file saved
