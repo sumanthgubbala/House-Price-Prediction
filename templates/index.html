@@ -21,16 +21,16 @@
             align-items: center;
             justify-content: center;
             border: 1px solid #b72a2a;
-            height: 100vh;
         }
         .form-container{
             background-color: #f8f8f8;
-            padding: 30px;
+            padding: 10px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 600px;
             overflow: hidden;
+            height: 100%;
         }
         label{
             font-weight: bold;
@@ -42,7 +42,6 @@
             display: grid;
             grid-template-columns: auto auto  1fr;
             grid-gap: 10px;
-            padding: 20px;
             justify-content: center;
             align-items: center;
             width: 400px;
@@ -97,20 +96,24 @@
                 <option value="South-West">South-West</option>
                 <option value="Missing">Missing</option>
             </select><br><br>
-            <label for="area">Area (in sq ft):</label>
-            <input type="text" id="area" name="area" required><br><br>
 
-            <label for="bedrooms">Number of Bedrooms:</label>
-            <input type="number" id="bedrooms" name="bedrooms" required><br><br>
+            <label for="rate">Area (in sq ft):</label>
+            <input type="text" id="rate" name="rate" required><br><br>
+            
+            <label for="area_sqft">Area (in sq ft):</label>
+            <input type="text" id="area_sqft" name="area_sqft" required><br><br>
 
-            <label for="bathrooms">Number of Bathrooms:</label>
-            <input type="number" id="bathrooms" name="bathrooms" required><br><br>
+            <label for="bedRoom">Number of Bedrooms:</label>
+            <input type="number" id="bedRoom" name="bedRoom" required><br><br>
 
-            <label for="balconies">Number of Balconies:</label>
-            <input type="number" id="balconies" name="balconies" required><br><br>
+            <label for="bathroom">Number of Bathrooms:</label>
+            <input type="number" id="bathroom" name="bathroom" required><br><br>
 
-            <label for="noOfFloors">Number of Floors:</label>
-            <input type="number" id="noOfFloors" name="noOFFloors" required><br><br>
+            <label for="balcony">Number of Balconies:</label>
+            <input type="number" id="balcony" name="balcony" required><br><br>
+
+            <label for="noOfFloor">Number of Floors:</label>
+            <input type="number" id="noOfFloor" name="noOfFloor" required><br><br>
 
             <label for="agePossession_processed">Age of Possession:</label>
             <input type="number" id="agePossession_processed" name="agePossession_processed" required><br><br>

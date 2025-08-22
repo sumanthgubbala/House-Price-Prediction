@@ -22,20 +22,21 @@ def predict_datapoint():
     if request.method == 'POST':
         print("Request received for prediction")
         facing = request.form.get('facing')
-        rate = request.form.get('rate') # type: ignore
-        area_sqft = request.form.get('area_sqft') # type: ignore
-        bedRoom = request.form.get('bedRoom') # type: ignore
-        bathroom = request.form.get('bathroom') # type: ignore
-        balcony = request.form.get('balcony') # type: ignore
-        noOfFloor = request.form.get('noOfFloor') # type: ignore
-        agePossession_processed = request.form.get('agePossession_processed')# type: ignore
-        avg_rating = request.form.get('avg_rating') # type: ignore
+        rate = float(request.form.get('rate')) # type: ignore
+        area_sqft = float(request.form.get('area_sqft'))# type: ignore
+        bedRoom = int(request.form.get('bedRoom'))# type: ignore
+        bathroom = int(request.form.get('bathroom'))# type: ignore
+        balcony = int(request.form.get('balcony'))# type: ignore
+        noOfFloor = int(request.form.get('noOfFloor'))# type: ignore
+        agePossession_processed = request.form.get('agePossession_processed')
+        avg_rating = float(request.form.get('avg_rating'))# type: ignore
 
         custom_data = CustomData(facing, rate, area_sqft, bedRoom, bathroom, balcony, noOfFloor, agePossession_processed, avg_rating) # type: ignore
         data_frame = custom_data.get_data_as_dataframe()
 
         prediction_pipeline = PredictionPipeline()
         result = prediction_pipeline.predict(data_frame)
+        print(data_frame)
         print(result)
 
         return render_template('index.html', prediction_text=f'Predicted Price: {result[0]}')
